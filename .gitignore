@@ -5,3 +5,16 @@ node_modules/
 *.key
 *-api-key.txt
 .env
+
+# Claves SSH sueltas en el repo (2026-07-26): `1234`/`1234.pub` son un par ed25519 REAL
+# que no casaba ninguna regla de arriba — un `git add -A` las habría publicado. Deberían
+# vivir fuera del repo; hasta que se muevan, esto las tapa.
+1234
+1234.pub
+id_ed25519
+id_ed25519.pub
+id_rsa
+id_rsa.pub
+
+# Residuo de herramienta (mismo criterio que boveda)
+.playwright-mcp/
